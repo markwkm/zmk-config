@@ -14,7 +14,7 @@
 
 / {
     behaviors {
-        gresc: grave_escape {
+        gresc2: grave_escape2 {
             compatible = "zmk,behavior-mod-morph";
             label = "GRAVE_ESCAPE";
             #binding-cells = <0>;
@@ -40,7 +40,7 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | ALT | GUI  | CTRL | LOWER|  SPACE |  | ENTER | RAISE| CTRL  | GUI   | ALT  |
             bindings = <
-&gresc    &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                     &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp INS
+&gresc2    &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                     &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp INS
 &kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                      &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSLH
 &bspc_del  &kp A  &kp S    &kp D    &kp F     &kp G                      &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B  &kp C_MUTE  &none   &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
