@@ -73,15 +73,16 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |   `   |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |       |     | HOME|   ^  |  END |      |                   | PGUP |       |       |      |       |       |
+// |   `   |     | HOME|   ^  |  END |      |                   | PGUP |       |       |      |       |       |
 // | DEL   |     |  <- |   v  |  ->  |      |                   | PGDN |       |       |      |       |       |
 // | SHIFT |     |     |      |      |      |        |  |       |      |       |       |      |       | SHIFT |
 //               | ALT | GUI  | CTRL |ADJUST|  SPACE |  | ENTER |      | CTRL  | GUI   | ALT  |
             bindings = <
-&kp GRAVE  &none        &kp HOME     &kp UP       &kp END      &none                       &none  &none  &none  &none  &none  &none
-&kp DEL    &none        &kp LEFT     &kp DOWN     &kp RIGHT    &none                       &none  &none  &none  &none  &none  &none
-&trans     &none        &none        &none        &none        &none        &none   &none  &none  &none  &none  &none  &none  &trans
-                        &trans       &trans       &trans       &mo ADJUST   &trans  &trans &trans &trans &trans &trans
+&kp GRAVE  &none  &none     &none     &none      &none                        &none   &none   &none   &none   &none  &none
+&kp GRAVE  &none  &kp HOME  &kp UP    &kp END    &none                        &none   &none   &none   &none   &none  &none
+&kp DEL    &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none                        &none   &none   &none   &none   &none  &none
+&trans     &none  &none     &none     &none      &none        &none   &none   &none   &none   &none   &none   &none  &trans
+                  &trans    &trans    &trans     &mo ADJUST   &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
